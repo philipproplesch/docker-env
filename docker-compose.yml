@@ -10,7 +10,8 @@ services:
       - 443:443
     volumes:
       - ./data/reverse-proxy/conf.d:/etc/nginx/conf.d
-      - ./data/certbot/www:/var/www
+      - ./data/certbot/www:/var/www # Required for ACME challenge
+      - ./data/certbot/letsencrypt:/etc/letsencrypt
     links:
       - ghost-blog
 
