@@ -5,4 +5,4 @@ docker run -it \
     renew --force-renewal
 
 # Restart nginx container to use new certificates
-docker restart reverse_proxy
+docker restart reverse-proxy
