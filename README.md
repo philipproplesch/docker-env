@@ -13,5 +13,5 @@ docker run -it \
 ## Renew SSL certificates
 
 ```
-0 0 0/12 1/1 * ? * ./renew.sh
+0 */12 * * * ./renew.sh
 ```

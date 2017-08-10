@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd "$(dirname "$0")"
+
 docker run -it \
     -v "$(pwd)/data/certbot/letsencrypt:/etc/letsencrypt" \
     -v "$(pwd)/data/certbot/www:/var/www" \
